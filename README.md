@@ -1,5 +1,5 @@
 # Ex.No.6 Development of Python Code Compatible with Multiple AI Tools
-## Date: 23/10/2025
+## Date:23/10/2025
 ## Register no: 212223220082
 
 # Aim: 
@@ -33,7 +33,7 @@ To design effective prompts that guide AI tools (like ChatGPT) to generate Pytho
 Write a Python program that connects to two weather APIs — OpenWeatherMap and WeatherAPI. Fetch current temperature and humidity data for a given city, and print the results neatly.
 
 ## OUTPUT:
-
+#### CODE BY CHATGPT
 ```
 import requests
 
@@ -68,7 +68,7 @@ It also mentioned the need to replace API keys with valid ones.
 Modify the previous code so that it compares the temperature and humidity values from both APIs and highlights the differences clearly
 
 ## Output:
-
+#### CODE BY GEMINI AI
 ```
 temp_diff = abs(open_temp - weather_temp)
 hum_diff = abs(open_hum - weather_hum)
@@ -79,7 +79,7 @@ print(f"Humidity difference: {hum_diff:.2f}%")
 if temp_diff > 2:
     print(" Significant temperature variation between APIs.")
 else:
-    print(" Both APIs show similar weather data.")
+    print("Both APIs show similar weather data.")
 
 ```
 
@@ -94,7 +94,7 @@ The AI added code to calculate absolute differences and print warnings if they e
 Based on the compared weather data, suggest how the program could automatically choose the more reliable API result and display an average value.
 
 ## Output:
-
+#### CODE BY CLAUDE AI
 ```
 avg_temp = (open_temp + weather_temp) / 2
 avg_hum = (open_hum + weather_hum) / 2
